@@ -8,22 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		845B00BB2C05FF53001BA73D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845B00BA2C05FF53001BA73D /* AppDelegate.swift */; };
-		845B00BD2C05FF53001BA73D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845B00BC2C05FF53001BA73D /* SceneDelegate.swift */; };
 		845B00BF2C05FF53001BA73D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845B00BE2C05FF53001BA73D /* ViewController.swift */; };
-		845B00C22C05FF53001BA73D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 845B00C02C05FF53001BA73D /* Main.storyboard */; };
 		845B00C42C05FF5C001BA73D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 845B00C32C05FF5C001BA73D /* Assets.xcassets */; };
 		845B00C72C05FF5C001BA73D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 845B00C52C05FF5C001BA73D /* LaunchScreen.storyboard */; };
+		845B00D32C072455001BA73D /* TicketSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845B00D22C072455001BA73D /* TicketSearchView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		845B00B72C05FF53001BA73D /* YetAnotherBookingService.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YetAnotherBookingService.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		845B00BA2C05FF53001BA73D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		845B00BC2C05FF53001BA73D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		845B00BE2C05FF53001BA73D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		845B00C12C05FF53001BA73D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		845B00C32C05FF5C001BA73D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		845B00C62C05FF5C001BA73D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		845B00C82C05FF5C001BA73D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		845B00D22C072455001BA73D /* TicketSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketSearchView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +54,46 @@
 		845B00B92C05FF53001BA73D /* YetAnotherBookingService */ = {
 			isa = PBXGroup;
 			children = (
-				845B00BA2C05FF53001BA73D /* AppDelegate.swift */,
-				845B00BC2C05FF53001BA73D /* SceneDelegate.swift */,
+				845B00D12C06024E001BA73D /* Resources */,
+				845B00D02C06010E001BA73D /* Views */,
+				845B00CF2C060107001BA73D /* Managers */,
+				845B00CE2C0600FC001BA73D /* Controllers */,
 				845B00BE2C05FF53001BA73D /* ViewController.swift */,
-				845B00C02C05FF53001BA73D /* Main.storyboard */,
-				845B00C32C05FF5C001BA73D /* Assets.xcassets */,
-				845B00C52C05FF5C001BA73D /* LaunchScreen.storyboard */,
-				845B00C82C05FF5C001BA73D /* Info.plist */,
 			);
 			path = YetAnotherBookingService;
+			sourceTree = "<group>";
+		};
+		845B00CE2C0600FC001BA73D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		845B00CF2C060107001BA73D /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		845B00D02C06010E001BA73D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				845B00C52C05FF5C001BA73D /* LaunchScreen.storyboard */,
+				845B00D22C072455001BA73D /* TicketSearchView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		845B00D12C06024E001BA73D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				845B00C32C05FF5C001BA73D /* Assets.xcassets */,
+				845B00C82C05FF5C001BA73D /* Info.plist */,
+				845B00BA2C05FF53001BA73D /* AppDelegate.swift */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +156,6 @@
 			files = (
 				845B00C72C05FF5C001BA73D /* LaunchScreen.storyboard in Resources */,
 				845B00C42C05FF5C001BA73D /* Assets.xcassets in Resources */,
-				845B00C22C05FF53001BA73D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +166,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				845B00D32C072455001BA73D /* TicketSearchView.swift in Sources */,
 				845B00BF2C05FF53001BA73D /* ViewController.swift in Sources */,
 				845B00BB2C05FF53001BA73D /* AppDelegate.swift in Sources */,
-				845B00BD2C05FF53001BA73D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		845B00C02C05FF53001BA73D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				845B00C12C05FF53001BA73D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		845B00C52C05FF5C001BA73D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -293,7 +313,6 @@
 				INFOPLIST_FILE = YetAnotherBookingService/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +339,6 @@
 				INFOPLIST_FILE = YetAnotherBookingService/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
